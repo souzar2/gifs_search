@@ -83,6 +83,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
   Widget _createGifTable(BuildContext context, AsyncSnapshot snapshot){
-
+    return GridView.builder(
+      padding: EdgeInsets.all(10.0),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 10.0,
+          mainAxisSpacing: 10.0,
+        ),
+        itemBuilder: null);
   }
 }
